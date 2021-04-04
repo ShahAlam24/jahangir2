@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+/* ============================================
+    Common css end
+================================================*/
+
+
+
+/* ================================================
+    Menu css start
+=================================================== */
+#header {
+    padding: 10px 0;
+    background: #036c95 !important;
+}
+
+.main-logo a {
+    height: 100px;
+    width: 100px;
+}
+
+#header .heading {
+
+    color: #fff;
+}
+
+.main-menu {
+    height: 55px;
+    z-index: 999;
+}
+
+.navbar-nav li a {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    padding: 0 15px !important;
+    line-height: 55px;
+    transition: all linear .3s;
+
+
+}
+
+.navbar-nav li a:hover {
+    color: #fff;
+    background: #000;
+
+}
+
+.login-page {
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    outline: 1px solid #fff;
+    padding: 1px 8px;
+    margin: 10px 0;
+    transition: all linear .3s;
+
+}
+
+.login-page:hover {
+    color: #ffffff;
+    background: #000;
+}
+
+/* =================================================
+    Menu css end
+===================================================*/
+/* Slider css start */
+.slider-items {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 500px;
+}
+
+.nxt_arr {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    background: #690909;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all linear .3s;
+
+}
+
+.prv_arr {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #690909;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: all linear .2s;
+}
+
+.nxt_arr:hover,
+.prv_arr:hover {
+    background: #6d3f3f;
+}
+
+.slider .slick-dots li button {
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #690909;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: transparent;
+    margin: 0 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider .slick-dots {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+    cursor: pointer;
+}
+
+.slider .slick-dots li.slick-active button::after {
+    position: absolute;
+    content: '';
+    left: 3px;
+    top: 3px;
+    width: 8px;
+    height: 8px;
+    background: #690909;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+/* ============================================
+        slider css end  
+==============================================*/
+
+/* ================================================
+    Principal css start
+=================================================== */
+#principal-part .card {
+    transition: all linear .3s;
+}
+
+#principal-part .card:hover {
+    box-shadow: 0 1.5rem 2.5rem rgba(12, 12, 12, 0.205) !important;
+}
+
+#principal-part .card img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 10px auto;
+
+}
+
+#principal-part .card .card-body h5 {
+    margin-top: -10px;
+}
+
+/* =================================================
+    Principal css end
+===================================================*/
+
+
+/* Contact page */
+
+
+.contactPage-content {
+    padding: 1px;
+}
+
+.contactPage-content h2 {
+    font-size: 30px;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+#contactPage form {
+    width: 100%;
+    background: #fff;
+    padding: 15px 100px 40px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px
+}
+
+label i {
+    color: #999;
+    font-size: 80%;
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+
+.form-inline label,
+.form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 90%;
+}
+
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: #006dcc;
+    border-color: #016BC1;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #0165b6;
+}
+
+textarea {
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: 0;
+}
+
+/* ================================================
+    Menu css start
+=================================================== */
+
+/* Footer css start */
+
+.footer-col h2 {
+    text-align: left;
+    font-size: 25px;
+    color: #058fc5;
+    font-weight: 700;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.footer-col .usflink {
+    text-align: center !important;
+}
+
+.footer-col:nth-child(3) {
+    margin-right: 0;
+}
+
+.footer-col ul {
+    margin-top: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    margin: 5px 0;
+    transition: all linear .3s;
+}
+
+.footer-col ul li a:hover {
+    color: #00dbd0;
+}
+
+.foot-contact {
+    width: 400px;
+}
+
+.footer-text {
+    padding: 10px 0;
+    margin-left: 40px;
+}
+
+.foot-cont {
+    height: 45px;
+    margin-top: 10px;
+
+}
+
+.foot-cont .foot-icon {
+    width: 50px;
+    float: left;
+    line-height: 45px;
+    text-align: center;
+
+}
+
+.foot-cont .foot-icon i {
+    font-size: 24px;
+    color: #979696;
+    line-height: 45px;
+    transition: all linear .3s;
+}
+
+.foot-icon:hover i {
+    color: #dddbdb;
+}
+
+.foot-cont .foot-link {
+    width: 250px;
+    float: left;
+
+}
+
+.foot-cont .foot-link a {
+    font-size: 16px;
+    font-weight: 500;
+    color: #a09f9f;
+    margin: 5px 0;
+    display: block;
+    transition: all linear .3s;
+}
+
+.foot-link a:hover {
+    color: #ffffff;
+}
+
+.foot-cont ul {
+    display: flex;
+    text-align: center;
+    margin-left: 60px;
+}
+
+.foot-cont ul li a {
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    background: #bd1515;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all linear .3s;
+    margin-left: 10px;
+
+}
+
+.foot-cont ul li .fot-fb {
+    background: #5188d0;
+    color: #ffffff;
+}
+
+.foot-cont ul li .fot-fb:hover {
+    background: #24528d;
+    color: #ffffff;
+}
+
+.foot-cont ul li .fot-ins {
+    background: #bf3328;
+    color: #ffffff;
+}
+
+.foot-cont ul li .fot-ins:hover {
+    background: #a81f15;
+    color: #ffffff;
+}
+
+.foot-cont ul li .fot-twi {
+    background: #3ec2f3;
+    color: #ffffff;
+}
+
+.foot-cont ul li .fot-twi:hover {
+    background: #1996c4;
+    color: #ffffff;
+}
+
+.foot-cont ul li .fot-in {
+    background: #5188d0;
+    color: #ffffff;
+}
+
+.foot-cont ul li .fot-in:hover {
+    background: #24528d;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    height: 50px;
+    background: #0c0c0c;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #b9b9b9;
+    font-size: 15px;
+    line-height: 50px;
+    margin-left: 30px;
+}
+
+.footer-copy {
+    display: block;
+    height: 40px;
+    background: #000000d1;
+    text-align: center;
+}
+
+.footer-copy p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 40px;
+}
+
+/* =================================================
+    Menu css end
+===================================================*/
+
+.login-form {
+    width: 500px;
+    margin: 50px auto;
+}
+
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.login-form h2 {
+    margin: 0 0 15px;
+}
+
+.form-control,
+.btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+
+
+/* sign up form */
+
+
+
+.form-control {
+    border-color: #eee;
+    min-height: 41px;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    border-color: #5cd3b4;
+}
+
+.form-control,
+.btn {
+    border-radius: 3px;
+}
+
+.signup-form {
+    width: 500px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.signup-form h2 {
+    color: #333;
+    margin: 0 0 30px 0;
+    display: inline-block;
+    padding: 0 30px 10px 0;
+    border-bottom: 3px solid #5cd3b4;
+}
+
+.signup-form form {
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form label {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.signup-form input[type="checkbox"] {
+    margin-top: 2px;
+}
+
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    background: #5cd3b4;
+    border: none;
+    margin-top: 20px;
+    min-width: 140px;
+}
+
+.signup-form .btn:hover,
+.signup-form .btn:focus {
+    background: #41cba9;
+    outline: none !important;
+}
+
+.signup-form a {
+    color: #5cd3b4;
+    text-decoration: underline;
+}
+
+.signup-form a:hover {
+    text-decoration: none;
+}
+
+.signup-form form a {
+    color: #5cd3b4;
+    text-decoration: none;
+}
+
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+
+/* ================================================
+    Menu css start
+=================================================== */
+/* =================================================
+    Menu css end
+===================================================*/
